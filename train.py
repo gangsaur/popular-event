@@ -1,4 +1,5 @@
 import numpy as np
+import Levenshtein
 from time import time
 import sklearn_crfsuite
 import sklearn_crfsuite.metrics
@@ -75,7 +76,7 @@ mode = input("(1/2)")
 if (mode == "1"):
     #Data Test
     y_pred = crf.predict(x_train)
-    print("F1 Score:" + sklearn_crfsuite.metrics.flat_f1_score(y_train, y_pred, average='weighted', labels=labels))
+    print("F1 Score : " + str(sklearn_crfsuite.metrics.flat_f1_score(y_train, y_pred, average='weighted', labels=labels)))
 else:
     print("With Label?")
     labelArgs = input("(Y/N)")
@@ -123,12 +124,31 @@ for pred in y_pred:
     else:
         sentence = in_tweet_list[i].strip().split(' ')        
     j = 0
-    tmp = []
+    tmp = str()
     for label in pred: 
         if (label == '1'):
-            tmp.append(sentence[j])
+            tmp += sentence[j] + ' '
         j+=1
-    if (tmp != []):
-        key_words.append(tmp)
+    if (tmp != ''):
+        key_words.append(tmp.rstrip())
     i+=1
-print(key_words)
+
+labeled = []
+score = {}
+
+for i in range(len(key_words)):
+    if i not in labeled:
+        for j in range(i + 1, len(key_words)):
+            if j not in labeled:
+                if Levenshtein.ratio(key_words[i], key_words[j]) > 0.33:
+                    labeled.append(j)
+                    if i in score.keys():
+                        score[i] += 1
+                    else:
+                        score[i] = 1
+
+sorted_score = [(k, score[k]) for k in sorted(score, key=score.get, reverse=True)]
+rank = 1
+for key, value in sorted_score:
+    print (str(rank) + '. ' + key_words[key])
+    rank += 1

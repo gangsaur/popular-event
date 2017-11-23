@@ -3,16 +3,11 @@ NNPFC NNPFC VBT NNAC IN NN DT .
 PERSON PERSON OTHER OTHER OTHER OTHER OTHER OTHER 
 1 2 3 4 5 6 7 8 
 2 2 2 2 2 2 2 2 
-Tidak ada kericuhan dalam penahanan tersebut . 
-NEG VBI NN IN NN DT . 
-OTHER OTHER OTHER OTHER OTHER OTHER OTHER 
-1 2 3 4 5 6 7 
-2 2 2 2 2 2 2 
-Sangat mengejutkan PBB . 
-RB VBT NNPAC . 
-OTHER OTHER OTHER OTHER 
-1 2 3 4 
-2 2 2 2 
+Tidak ada kericuhan dalam penahanan tersebut . Sangat mengejutkan PBB . 
+NEG VBI NN IN NN DT . RB VBT NNPAC . 
+OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 7 8 9 10 11 
+2 2 2 2 2 2 2 2 2 2 2 
 Yeksa tampan memakan buah naga . 
 NNPFC JJ VBT NN NN . 
 PERSON OTHER OTHER OTHER OTHER OTHER 
