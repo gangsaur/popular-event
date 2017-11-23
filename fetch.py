@@ -1,10 +1,10 @@
 from twython import Twython, TwythonError
 import json
 
-app_key='XLO8cM3MTk3FooPxeGYrOpYFG'
-app_secret='874GxAnlqSXZ61TVJ1XadU8vlq4vPYV6kCBrRJQV8lhcbUOx0W'
-oauth_token='760365669267283968-ZgmFMhJhmCFnjXESYB0yJVkNjHYDUtv'
-oauth_token_secret='tRUlbFieFzLaaSRGk3FeNM4WeD4F4yPZYQ9Bm2HVCIW5V'
+app_key=''
+app_secret=''
+oauth_token=''
+oauth_token_secret=''
 
 twitter = Twython(app_key, app_secret, oauth_token, oauth_token_secret)
 
