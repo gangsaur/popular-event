@@ -1,10 +1,10 @@
 from twython import Twython, TwythonError
 import json
 
-app_key=''
-app_secret=''
-oauth_token=''
-oauth_token_secret=''
+app_key='XLO8cM3MTk3FooPxeGYrOpYFG'
+app_secret='874GxAnlqSXZ61TVJ1XadU8vlq4vPYV6kCBrRJQV8lhcbUOx0W'
+oauth_token='760365669267283968-ZgmFMhJhmCFnjXESYB0yJVkNjHYDUtv'
+oauth_token_secret='tRUlbFieFzLaaSRGk3FeNM4WeD4F4yPZYQ9Bm2HVCIW5V'
 
 twitter = Twython(app_key, app_secret, oauth_token, oauth_token_secret)
 
@@ -15,7 +15,6 @@ twitter = Twython(app_key, app_secret, oauth_token, oauth_token_secret)
 #twitter.get_lastfunction_header('x-rate-limit-remaining')
 
 #Search
-str = twitter.search(geocode='-6.914744,107.609810,15km', count='150')
-with open('tweets.txt','w') as outfile:
-	print(json.dump(str, outfile, indent=4))
-twitter.get_lastfunction_header('x-rate-limit-remaining')
+str = twitter.get_user_timeline(screen_name = "temponewsroom",tweet_mode = "extended", count= 500, include_rts= False)
+for tweet in str:
+    print(tweet['full_text'])
