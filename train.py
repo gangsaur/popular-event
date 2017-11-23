@@ -8,6 +8,7 @@ tweet_list = []
 pos_tags = []
 name_entities = []
 tags = []
+key_words = []
 
 #Read All Files
 for file_name in file_names:
@@ -59,9 +60,22 @@ crf = sklearn_crfsuite.CRF(
 crf.fit(x_train,y_train)
 labels = list(crf.classes_)
 print(labels)
-print(len(x_train))
 
+print("Input")
 #Data Test
 y_pred = crf.predict(x_train)
-print(sklearn_crfsuite.metrics.flat_f1_score(y_train, y_pred,
-                      average='weighted', labels=labels))
+print(sklearn_crfsuite.metrics.flat_f1_score(y_train, y_pred, average='weighted', labels=labels))
+
+#Construct list of (list of key word)
+i = 0
+for pred in y_pred:
+    sentence = tweet_list[i].strip().split(' ')
+    j = 0
+    tmp = []
+    for label in pred: 
+        if (label == '1'):
+            tmp.append(sentence[j])
+        j+=1
+    if (tmp != []):
+        key_words.append(tmp)
+    i+=1
