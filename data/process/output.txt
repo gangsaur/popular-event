@@ -2,14 +2,69 @@ Setya Novanto ditahan KPK sejak malam ini .
 NNPFC NNPFC VBT NNAC IN NN DT . 
 PERSON PERSON OTHER OTHER OTHER OTHER OTHER OTHER 
 1 2 3 4 5 6 7 8 
-1 1 1 1 1 1 1 1
+2 2 2 2 2 2 2 2 
 Tidak ada kericuhan dalam penahanan tersebut . 
 NEG VBI NN IN NN DT . 
 OTHER OTHER OTHER OTHER OTHER OTHER OTHER 
 1 2 3 4 5 6 7 
-0 0 0 0 0 0 0
+2 2 2 2 2 2 2 
 Sangat mengejutkan PBB . 
 RB VBT NNPAC . 
 OTHER OTHER OTHER OTHER 
 1 2 3 4 
-0 0 1 0
+2 2 2 2 
+Yeksa tampan memakan buah naga . 
+NNPFC JJ VBT NN NN . 
+PERSON OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 
+2 2 2 2 2 2 
+Ayaneru dikabarkan hamil ! 
+NNPFC VBT VBT . 
+PERSON OTHER OTHER OTHER 
+1 2 3 4 
+2 2 2 2 
+Rate-up terbaru telah tiba . 
+NNFC JJ MD VBI . 
+OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 
+2 2 2 2 2 
+KPK tegaskan Novanto sudah ditahan . 
+NNAC NN NNPFC MD VBT . 
+OTHER OTHER LOCATION OTHER OTHER OTHER 
+1 2 3 4 5 6 
+2 2 2 2 2 2 
+Kahiyang-Bobby menikah di Medan . 
+NNFC NN IN NNPFC . 
+OTHER OTHER OTHER LOCATION OTHER 
+1 2 3 4 5 
+2 2 2 2 2 
+Prajurit Indonesia berhasil bebaskan sandera di Papua . 
+NNFC NNPFC RB VBT NN IN NNFC . 
+PERSON PERSON OTHER OTHER OTHER OTHER LOCATION OTHER 
+1 2 3 4 5 6 7 8 
+2 2 2 2 2 2 2 2 
+Xiamo Redmi Note 5 sangat canggih . 
+NNPFC NNPFC NNPFC CDP1 RB JJ . 
+PERSON PERSON OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 7 
+2 2 2 2 2 2 2 
+IPhone X laris manis pekan ini . 
+NNPFC SYM JJ NN NN DT . 
+PERSON PERSON OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 7 
+2 2 2 2 2 2 2 
+IHSG ditutup datar pekan ini . 
+NNPAC VBT NN NN DT . 
+OTHER OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 
+2 2 2 2 2 2 
+Toyota tarik mobil baru . 
+NNFC NN NN JJ . 
+OTHER OTHER OTHER OTHER OTHER 
+1 2 3 4 5 
+2 2 2 2 2 
+Presiden Jokowi sudah memiliki menantu . 
+NNFC NNPFC MD VBT NN . 
+PERSON PERSON OTHER OTHER OTHER OTHER 
+1 2 3 4 5 6 
+2 2 2 2 2 2 
