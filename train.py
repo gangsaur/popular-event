@@ -135,12 +135,13 @@ for pred in y_pred:
 
 labeled = []
 score = {}
+treshold = 0.5
 
 for i in range(len(key_words)):
     if i not in labeled:
         for j in range(i + 1, len(key_words)):
             if j not in labeled:
-                if Levenshtein.ratio(key_words[i], key_words[j]) > 0.33:
+                if Levenshtein.ratio(key_words[i], key_words[j]) > treshold:
                     labeled.append(j)
                     if i in score.keys():
                         score[i] += 1
@@ -152,3 +153,5 @@ rank = 1
 for key, value in sorted_score:
     print (str(rank) + '. ' + key_words[key])
     rank += 1
+    if rank > 10:
+        break
